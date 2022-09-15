@@ -1,3 +1,3 @@
 def draw_power_plant():
-    print("*****")
+    print("****")
     return
