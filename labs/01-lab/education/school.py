@@ -1,3 +1,7 @@
 def draw_school():
-    print("school not found")
+    print("this is out school")
+    print(" $")
+    print("$$$")
+    print("$$$")
+    print("===")
     return
