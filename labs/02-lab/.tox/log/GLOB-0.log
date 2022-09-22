@@ -1,0 +1,53 @@
+action: GLOB, msg: packaging
+cwd: /Users/maoqingfeng/Documents/CS506/CS506-Fall2022/labs/02-lab
+cmd: /Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9 setup.py sdist --formats=zip --dist-dir .tox/dist
+/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/setuptools/installer.py:27: SetuptoolsDeprecationWarning: setuptools.installer is deprecated. Requirements should be satisfied by a PEP 517 installer.
+  warnings.warn(
+running sdist
+running egg_info
+writing cs506.egg-info/PKG-INFO
+writing dependency_links to cs506.egg-info/dependency_links.txt
+writing entry points to cs506.egg-info/entry_points.txt
+writing requirements to cs506.egg-info/requires.txt
+writing top-level names to cs506.egg-info/top_level.txt
+reading manifest file 'cs506.egg-info/SOURCES.txt'
+writing manifest file 'cs506.egg-info/SOURCES.txt'
+running check
+warning: check: missing required meta-data: url
+
+warning: check: missing meta-data: either (author and author_email) or (maintainer and maintainer_email) should be supplied
+
+creating cs506-0.0.1
+creating cs506-0.0.1/cs506
+creating cs506-0.0.1/cs506.egg-info
+copying files to cs506-0.0.1...
+copying README.md -> cs506-0.0.1
+copying setup.py -> cs506-0.0.1
+copying cs506/__init__.py -> cs506-0.0.1/cs506
+copying cs506/read.py -> cs506-0.0.1/cs506
+copying cs506/sim.py -> cs506-0.0.1/cs506
+copying cs506.egg-info/PKG-INFO -> cs506-0.0.1/cs506.egg-info
+copying cs506.egg-info/SOURCES.txt -> cs506-0.0.1/cs506.egg-info
+copying cs506.egg-info/dependency_links.txt -> cs506-0.0.1/cs506.egg-info
+copying cs506.egg-info/entry_points.txt -> cs506-0.0.1/cs506.egg-info
+copying cs506.egg-info/requires.txt -> cs506-0.0.1/cs506.egg-info
+copying cs506.egg-info/top_level.txt -> cs506-0.0.1/cs506.egg-info
+Writing cs506-0.0.1/setup.cfg
+creating '.tox/dist/cs506-0.0.1.zip' and adding 'cs506-0.0.1' to it
+adding 'cs506-0.0.1'
+adding 'cs506-0.0.1/cs506'
+adding 'cs506-0.0.1/cs506.egg-info'
+adding 'cs506-0.0.1/PKG-INFO'
+adding 'cs506-0.0.1/README.md'
+adding 'cs506-0.0.1/setup.py'
+adding 'cs506-0.0.1/setup.cfg'
+adding 'cs506-0.0.1/cs506/sim.py'
+adding 'cs506-0.0.1/cs506/__init__.py'
+adding 'cs506-0.0.1/cs506/read.py'
+adding 'cs506-0.0.1/cs506.egg-info/PKG-INFO'
+adding 'cs506-0.0.1/cs506.egg-info/SOURCES.txt'
+adding 'cs506-0.0.1/cs506.egg-info/entry_points.txt'
+adding 'cs506-0.0.1/cs506.egg-info/requires.txt'
+adding 'cs506-0.0.1/cs506.egg-info/top_level.txt'
+adding 'cs506-0.0.1/cs506.egg-info/dependency_links.txt'
+removing 'cs506-0.0.1' (and everything under it)
