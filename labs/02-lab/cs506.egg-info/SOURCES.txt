@@ -1,0 +1,11 @@
+README.md
+setup.py
+cs506/__init__.py
+cs506/read.py
+cs506/sim.py
+cs506.egg-info/PKG-INFO
+cs506.egg-info/SOURCES.txt
+cs506.egg-info/dependency_links.txt
+cs506.egg-info/entry_points.txt
+cs506.egg-info/requires.txt
+cs506.egg-info/top_level.txt
