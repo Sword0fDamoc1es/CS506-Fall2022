@@ -3,6 +3,8 @@ from math import inf
 import random
 import csv
 
+from scipy import rand
+
 
 def get_centroid(points):
     """
@@ -34,8 +36,36 @@ def get_centroids(dataset, assignments):
     Compute the centroid for each of the assigned groups.
     Return `k` centroids in a list
     """
-    raise NotImplementedError()
+    data_len = len(dataset)
+    dd = len(dataset[0])
+    ass_len = len(assignments)
+    ass_holder = [[]*ass_len]
 
+    SMALL = inf
+    SMALL_idx = -1
+
+    for i in range(data_len):
+        data = dataset[i]
+
+        for j in range(ass_len):
+            dis = distance(assignments[i],data)
+            if dis<SMALL:
+                SMALL_idx=j
+                SMALL=dis
+        ass_holder[SMALL_idx].append(data)
+        SMALL_idx=-1
+        SMALL = inf
+    res = []
+    for i in range(ass_len):
+        cluster = ass_holder[i]
+        cur=get_centroid(cluster)
+        res.append(cur)
+    return res
+    
+    
+
+
+    
 
 def assign_points(data_points, centers):
     """
@@ -57,7 +87,12 @@ def distance(a, b):
     """
     Returns the Euclidean distance between a and b
     """
-    raise NotImplementedError()
+    acc = 0
+    d = len(a)
+    for i in range(d):
+        dif = abs(a[i]-b[i])
+        acc += dif**2
+    return acc**0.5
 
 
 def distance_squared(a, b):
@@ -73,7 +108,8 @@ def generate_k(dataset, k):
     Given `data_set`, which is an array of arrays,
     return a random set of k points from the data_set
     """
-    raise NotImplementedError()
+    set= random.sample(dataset,k)
+    return set
 
 
 def generate_k_pp(dataset, k):
