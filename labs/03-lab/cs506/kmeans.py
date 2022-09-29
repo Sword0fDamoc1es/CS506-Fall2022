@@ -96,11 +96,14 @@ def distance(a, b):
 
 
 def distance_squared(a, b):
-    raise NotImplementedError()
-
+    return distance(a,b)**2
 
 def cost_function(clustering):
-    raise NotImplementedError()
+    cost = 0
+    for key in clustering:
+        for value in clustering[key]:
+            cost += distance_squared(list(key),value)
+    return cost
 
 
 def generate_k(dataset, k):
