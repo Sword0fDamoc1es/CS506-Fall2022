@@ -3,6 +3,7 @@ Name: cs506
 Version: 0.0.1
 Summary: Run some cs506 algorithms
 License: Apache License 2.0
+Platform: UNKNOWN
 Classifier: Programming Language :: Python :: 3.6
 Classifier: Programming Language :: Python :: 3.7
 Requires-Python: >=3.6, <4
@@ -34,3 +35,5 @@ line and replace it with code that does what the function should do. Test your i
 It's a good idea to take a look at the tests defined [here](https://github.com/gallettilance/CS506-Fall2022/blob/master/labs/03-lab/tests/test_kmeans.py), and add a few tests of your own. Remember to use both positive and negative examples for testing.
 
 Contributions are always welcome (and encouraged) to clarify existing documentation in this repository!
+
+
